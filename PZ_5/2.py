@@ -1,4 +1,4 @@
-import math  # Импортируем модуль math для доступа к функциям exp и ln
+import math
 
 def Power1(A, B):
     if A <= 0:
