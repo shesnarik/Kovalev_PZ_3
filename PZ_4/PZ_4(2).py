@@ -1,7 +1,7 @@
 a = input('Введите целое число: ')
 while not a.isdigit():
     print('Error')
-    a = input('Введите целое число:')
+    a = input('Введите целое число: ')
 b = input('введите целое число:')
 while not b.isdigit():
     print('Error')
