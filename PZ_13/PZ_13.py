@@ -1,10 +1,16 @@
 #В матрице найти суммы элементов каждой строки и поместить их в новый массив.
 #Выполнить замену элементов третьего столбца исходной матрицы на полученные
 #cуммы.
-matrix = [[i+j for j in range(3)] for i in range(0, 7, 3)]
-sums = [sum(row) for row in matrix]
+import numpy as np
 
-for i in range(len(matrix)):
-    matrix[i][2] = sums[i]
-for row in matrix:
-    print(row)
+matrix = np.random.randint(1, 10, (3, 3))
+print("Исходная матрица:")
+print(matrix)
+
+row_sums = np.sum(matrix, axis=1)
+print("\nСуммы элементов каждой строки:")
+print(row_sums)
+
+matrix[:, 2] = row_sums
+print("\nМатрица после замены элементов третьего столбца:")
+print(matrix)

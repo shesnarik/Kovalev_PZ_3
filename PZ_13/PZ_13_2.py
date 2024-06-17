@@ -1,10 +1,7 @@
 #В матрице найти сумму элементов второй половины матрицы.
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-
+import numpy as np
+matrix = np.random.randint(1, 10, (3, 3))
+print(matrix)
 second_half_sum = sum([row[-1] for row in matrix])
 
 print(second_half_sum)

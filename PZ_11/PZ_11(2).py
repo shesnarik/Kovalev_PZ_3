@@ -1,5 +1,4 @@
 import string
-
 with open('text18-16.txt', 'r', encoding='utf-16') as file:
     data = file.readlines()
 data = ''.join(data)
